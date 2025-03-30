@@ -1,0 +1,8 @@
+.city-select {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 24px;
+  font-weight: 500;
+}

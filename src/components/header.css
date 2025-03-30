@@ -1,0 +1,26 @@
+.header {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 16px;
+
+  background-color: white;
+
+  box-sizing: border-box;
+  border-bottom: 2px solid #647f8a;
+
+  box-shadow: 3px 0px 5px #0000005b;
+
+  z-index: 2;
+}
+
+.header>.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  opacity: 0.8;
+}

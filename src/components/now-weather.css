@@ -1,0 +1,24 @@
+.now-weather {
+  position: relative;
+
+  width: 100%;
+
+  background-color: white;
+
+  padding: 32px;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(200, 192, 211);
+}
+
+.now-weather .center {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translate(-50%, 0%);
+}
+
+.now-weather .center>span {
+  font-size: 32px;
+  font-weight: 500;
+}

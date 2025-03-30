@@ -1,18 +1,18 @@
+import path from "path";
+import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
 
-import path from 'path';
-import react from '@vitejs/plugin-react';
-
-const SRC_DIR = path.resolve(__dirname, './src');
-const PUBLIC_DIR = path.resolve(__dirname, './public');
-const BUILD_DIR = path.resolve(__dirname, './www',);
+const SRC_DIR = path.resolve(__dirname, "./src");
+const PUBLIC_DIR = path.resolve(__dirname, "./public");
+const BUILD_DIR = path.resolve(__dirname, "./www");
 export default async () => {
-
-  return  {
+  return {
     plugins: [
       react(),
+      svgr(),
     ],
     root: SRC_DIR,
-    base: '',
+    base: "",
     publicDir: PUBLIC_DIR,
     build: {
       outDir: BUILD_DIR,
@@ -24,12 +24,11 @@ export default async () => {
     },
     resolve: {
       alias: {
-        '@': SRC_DIR,
+        "@": SRC_DIR,
       },
     },
     server: {
       host: true,
     },
-
   };
-}
+};

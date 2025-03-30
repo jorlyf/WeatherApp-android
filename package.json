@@ -25,10 +25,12 @@
     "@capacitor/keyboard": "^7.0.0",
     "@capacitor/splash-screen": "^7.0.0",
     "@capacitor/status-bar": "^7.0.0",
+    "antd": "^5.24.5",
     "dom7": "^4.0.6",
     "framework7": "^8.3.4",
     "framework7-react": "^8.3.4",
     "prop-types": "^15.8.1",
+    "qweather-icons": "^1.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "skeleton-elements": "^4.0.1",
@@ -41,6 +43,7 @@
     "cross-env": "^7.0.3",
     "less": "^4.2.2",
     "postcss-preset-env": "^10.1.5",
-    "vite": "^6.2.2"
+    "vite": "^6.2.2",
+    "vite-plugin-svgr": "^4.3.0"
   }
 }

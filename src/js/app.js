@@ -17,10 +17,11 @@ import '../css/app.less';
 
 // Import App Component
 import App from '../app.jsx';
+import "../style.css";
 
 // Init F7 React Plugin
 Framework7.use(Framework7React)
 
 // Mount React App
-const root = createRoot(document.getElementById('app'));
+const root = createRoot(document.getElementById('root'));
 root.render(React.createElement(App));
