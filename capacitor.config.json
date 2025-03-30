@@ -1,6 +1,6 @@
 {
-  "appId": "io.framework7.myapp",
-  "appName": "My App",
+  "appId": "io.framework7.weatherApp",
+  "appName": "Weather app",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

@@ -3,7 +3,7 @@
   "type": [
     "capacitor"
   ],
-  "name": "My App",
+  "name": "Weather app",
   "framework": "react",
   "template": "single-view",
   "bundler": "vite",
@@ -78,7 +78,7 @@
       "typography"
     ]
   },
-  "pkg": "io.framework7.myapp",
+  "pkg": "io.framework7.weatherApp",
   "capacitor": {
     "platforms": [
       "android"

@@ -23,6 +23,6 @@ export const getCityCoordinates = async (city) => {
 };
 
 export const getCities = async () => {
-  await wait(3000);
+  // await wait(3000);
   return citiesJson;
 };

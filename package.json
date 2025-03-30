@@ -1,15 +1,16 @@
 {
-  "name": "my-app",
+  "name": "weather-app",
   "private": true,
   "version": "1.0.0",
-  "description": "My App",
+  "description": "Weather app",
   "repository": "",
   "license": "UNLICENSED",
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vite build",
-    "build-capacitor-android": "cross-env NODE_ENV=production vite build && npx cap copy android"
+    "build-capacitor-android": "cross-env NODE_ENV=production vite build && npx cap copy android",
+    "resources": "capacitor-resources -p android"
   },
   "browserslist": [
     "IOS >= 15",
@@ -26,6 +27,7 @@
     "@capacitor/splash-screen": "^7.0.0",
     "@capacitor/status-bar": "^7.0.0",
     "antd": "^5.24.5",
+    "capacitor-resources": "^2.0.5",
     "dom7": "^4.0.6",
     "framework7": "^8.3.4",
     "framework7-react": "^8.3.4",
