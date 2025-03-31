@@ -8,7 +8,15 @@
   padding: 32px;
 
   box-sizing: border-box;
-  border-bottom: 1px solid rgb(200, 192, 211);
+  border-bottom: 1px solid #2e2138;
+  box-shadow: 2px 3px 4px #00000009;
+}
+
+.now-weather .icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .now-weather .center {
@@ -18,7 +26,16 @@
   transform: translate(-50%, 0%);
 }
 
-.now-weather .center>span {
+.now-weather .center>span:first-child {
+  display: block;
+  width: min-content;
+  margin: 0px auto;
   font-size: 32px;
+  font-weight: 500;
+}
+
+.now-weather .center>span:last-child {
+  display: block;
+  font-size: 18px;
   font-weight: 500;
 }

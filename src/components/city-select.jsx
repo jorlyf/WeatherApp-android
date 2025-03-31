@@ -51,11 +51,6 @@ const CitySelect = ({
         open={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         onCancel={() => setIsModalOpen(false)}
-        styles={{
-          body: {
-            height: "70vh",
-          },
-        }}
         footer={null}
         title="Выбор города"
       >

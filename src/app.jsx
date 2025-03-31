@@ -21,6 +21,16 @@ const App = () => {
   const [data, setData] = React.useState(null);
   const isDataLoading = data == null;
 
+  const dataNow = React.useMemo(() => {
+    if (data == null) return null;
+
+    return {
+      temperature: data.current.temperature_2m,
+      relativeHumidity: data.current.relative_humidity_2m,
+      code: data.current.weather_code,
+    };
+  });
+
   const dataDays = React.useMemo(() => {
     if (data == null) return [];
 
@@ -30,6 +40,7 @@ const App = () => {
         date: new Date(data.daily.time[dayIndex]),
         temperatureDay: Math.round(data.daily.temperature_2m_max[dayIndex]),
         temperatureNight: Math.round(data.daily.temperature_2m_min[dayIndex]),
+        code: data.daily.weather_code[dayIndex],
       };
 
       days.push(day);
@@ -74,12 +85,14 @@ const App = () => {
       />
 
       <main>
-        {isDataLoading && <Spin />}
+        {isDataLoading && <Spin size="large" className="spin-centered" />}
         {!isDataLoading &&
           (
             <>
               <NowWeather
-                temperature={data.current.temperature_2m}
+                temperature={dataNow.temperature}
+                relativeHumidity={dataNow.relativeHumidity}
+                code={dataNow.code}
                 units={dataUnits}
               />
 
@@ -90,6 +103,7 @@ const App = () => {
                     date={day.date}
                     temperatureDay={day.temperatureDay}
                     temperatureNight={day.temperatureNight}
+                    code={day.code}
                     units={dataUnits}
                   />
                 ))}

@@ -1,4 +1,17 @@
 {
   "Izhevsk": "Ижевск",
-  "Moscow": "Москва"
+  "Moscow": "Москва",
+  "Glazov": "Глазов",
+  "Irkutsk": "Иркутск",
+  "Voronezh": "Воронеж",
+  "Votkinsk": "Воткинск",
+  "Saint Petersburg": "Санкт-Петербург",
+  "Kirov": "Киров",
+  "Saratov": "Саратов",
+  "Omsk": "Омск",
+  "Krasnodar": "Краснодар",
+  "Sochi": "Сочи",
+  "Magadan": "Магадан",
+  "Ekaterinburg": "Екатеринбург",
+  "Murmansk": "Мурманск"
 }

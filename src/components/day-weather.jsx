@@ -1,6 +1,6 @@
 import React from "react";
+import WeatherIcon, { weatherCodeToIconId, WeatherIconIds } from "./weather-icon";
 import "./day-weather.css";
-import WeatherIcon, { WeatherIconIds } from "./weather-icon";
 
 const getWeekday = (date) =>
   date.toLocaleDateString({ language: "ru", caseFirst: "upper" }, {
@@ -19,6 +19,7 @@ const DayWeather = ({
   date,
   temperatureDay,
   temperatureNight,
+  code,
   units,
 }) => {
   const weekday = getWeekday(date);
@@ -29,7 +30,7 @@ const DayWeather = ({
       <span className="date">{`${weekday}, ${dayMonth}`}</span>
       <div className="right">
         <div>
-          <WeatherIcon id={WeatherIconIds.sunny} />
+          <WeatherIcon id={weatherCodeToIconId(code)} />
           <span>{`${temperatureDay}${units.temperature}`}</span>
         </div>
         <div>
